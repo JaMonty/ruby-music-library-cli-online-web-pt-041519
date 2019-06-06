@@ -7,13 +7,12 @@ class MusicLibraryController
   def call
 
     input = " "
-
     until  input == "exit"
-      input gets.chomp
-      case input
-      when exit
-      puts "Goodbye."
-      end
-     end
+    input = gets.chomp
+    case input
+    when exit
+    puts "Goodbye."
+    end
+    end
    end
 end
