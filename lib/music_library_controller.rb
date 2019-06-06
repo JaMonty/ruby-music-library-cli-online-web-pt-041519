@@ -5,11 +5,20 @@ class MusicLibraryController
   end
 
   def call
-    input = ""
 
-    puts ("Welcome to your music library!")
+    input = " "
 
-    input = gets.strip
+    until  input == "exit"
+      input gets.chomp
+      case input
+      when exit
+      puts "Goodbye."
+      end 
+     end
+   end
+end
+
+
   end
 
 
